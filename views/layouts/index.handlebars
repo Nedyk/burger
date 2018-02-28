@@ -1,10 +1,10 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not sleepy!</h2>
+<h2>Enter the name of the burger!</h2>
 
 <ul>
   {{#each burgers}}
-    {{#unless sleepy}}
+    {{#unless devoured}}
       {{> burgers/cat-block sleep=true}}
     {{/unless}}
   {{/each}}
